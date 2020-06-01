@@ -1,29 +1,26 @@
 import React from 'react';
+import * as S from './styled';
 
 const Header = () => {
   return (
-    <header className='header'>
-      <nav className='header__menu'>
-        <ul className='header__logo'></ul>
-        <ul className='header__links'>
+    <S.Header>
+      <S.Nav>
+        <div>
+          <S.Img></S.Img>
+        </div>
+        <S.Ul>
           <li>
-            <a href className='header__link'>
-              <span>Home</span>
-            </a>
+            <S.a>Home</S.a>
           </li>
           <li>
-            <a href className='header__link'>
-              <span>About</span>
-            </a>
+            <S.a>About</S.a>
           </li>
           <li>
-            <a href className='header__link'>
-              <span>Projects</span>
-            </a>
+            <S.a>Projects</S.a>
           </li>
-        </ul>
-      </nav>
-    </header>
+        </S.Ul>
+      </S.Nav>
+    </S.Header>
   );
 };
 

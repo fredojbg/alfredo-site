@@ -9,13 +9,26 @@ const GlobalStyles = createGlobalStyle`
       props.theme.mode === 'dark'
         ? variables.darkModeBackground
         : variables.lightModeBackground};
-        
+
     color: ${props =>
       props.theme.mode === 'dark'
         ? variables.darkModeColor
         : variables.lightModeColor};
 
     font-family: ${variables.fontFamily}
+  }
+
+
+  a {
+    text-decoration: none;
+    color: ${props =>
+      props.theme.mode === 'dark'
+        ? variables.darkModeColor
+        : variables.lightModeColor};
+  }
+
+  li {
+    list-style: none;
   }
 `;
 
